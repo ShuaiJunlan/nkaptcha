@@ -1,5 +1,6 @@
 package io.github.shuaijunlan.core.impl;
 
+import io.github.shuaijunlan.config.Config;
 import io.github.shuaijunlan.constant.ParamDefaultValue;
 import io.github.shuaijunlan.core.IVerificationCodeProducer;
 import io.github.shuaijunlan.core.VerificationModel;
@@ -10,6 +11,7 @@ import io.github.shuaijunlan.utils.RandomColorUtil;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.util.Properties;
 
 
 /**
@@ -27,6 +29,10 @@ public class VerificationCodeProducer implements IVerificationCodeProducer {
     private static int codeY = height - (height >> 2);
 
     private String text;
+    private Config config;
+    public VerificationCodeProducer(Properties properties){
+        config = new Config(properties);
+    }
 
     @Override
     public VerificationModel createVerificationCode() {
@@ -40,17 +46,16 @@ public class VerificationCodeProducer implements IVerificationCodeProducer {
         graphics.fillRect(0, 0, width, height);
         Font font = RandomFontUtil.getFontStyle(fontHeight);
         graphics.setFont(font);
-        if (ParamDefaultValue.NKAPTCHA_IMAGE_NOISE_LINE_DV){
-            NoiseUtil.setNoiseLine(graphics);
+        if (config.isNoiseLine()){
+            NoiseUtil.setNoiseLine(graphics, config.getNoiseLineCount());
         }
-        if (ParamDefaultValue.NKAPTCHA_NOISE_POINT_DV){
+        if (config.isNoisePoint()){
             NoiseUtil.setNoisePoint(bufferedImage);
         }
-        text = RandomTextUtil.randomText();
+        text = RandomTextUtil.randomText(config.getLanguageValue());
         drawFont(text, graphics);
 
-        VerificationModel model = new VerificationModel(text, bufferedImage);
-        return model;
+        return new VerificationModel(text, bufferedImage);
     }
 
     private void drawFont(String str, Graphics graphics){

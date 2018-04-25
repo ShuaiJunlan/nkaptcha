@@ -14,10 +14,10 @@ public class NoiseUtil {
     private static Integer width = ParamDefaultValue.NKAPTCHA_IMAGE_WIDTH_DV;
     private  static Integer height = ParamDefaultValue.NKAPTCHA_IMAGE_HEIGHT_DV;
 
-    public static void setNoiseLine(Graphics graphics){
-        Integer lineCount = ParamDefaultValue.NKAPTCHA_IMAGE_NOISE_LINE_COUNT_DV;
+    public static void setNoiseLine(Graphics graphics, Integer count){
+
          Random random = new Random();
-        for (int i = 0; i < lineCount; i++) {
+        for (int i = 0; i < count; i++) {
             int x1 = random.nextInt(width);
             int y1 = random.nextInt(height);
             int x2 = x1 + random.nextInt(width);

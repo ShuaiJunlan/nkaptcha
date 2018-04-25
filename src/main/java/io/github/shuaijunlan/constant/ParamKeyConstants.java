@@ -6,11 +6,11 @@ package io.github.shuaijunlan.constant;
  */
 public class ParamKeyConstants {
 
-    public final static String NKAPTCHA_NOISE_LINE = "nkaptcha.noise.line";
+    public final static String NKAPTCHA_IMAGE_NOISE_LINE = "nkaptcha.image.noise.line";
 
-    public final static String NKAPTCHA_NOISE_POINT = "nkaptcha.noise.point";
+    public final static String NKAPTCHA_IMAGE_NOISE_POINT = "nkaptcha.image.noise.point";
 
-    public final static String NKAPTCHA_PRODUCER_IMPL = "nkaptcha.verificationcodeproducer.impl";
+    public final static String NKAPTCHA_IMAGE_NOISE_LINE_COUNT = "nkaptcha.image.noise.line.count";
 
     public final static String NKAPTCHA_TEXT_LANGUAGE = "nkaptcha.text.language";
 
@@ -21,4 +21,6 @@ public class ParamKeyConstants {
     public static final String NKAPTCHA_IMAGE_WIDTH = "nkaptcha.image.width";
 
     public static final String NKAPTCHA_IMAGE_HEIGHT = "nkaptcha.image.height";
+
+    public final static String NKAPTCHA_PRODUCER_IMPL = "nkaptcha.verificationcodeproducer.impl";
 }
