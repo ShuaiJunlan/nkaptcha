@@ -4,7 +4,7 @@
 
 **nkaptcha** is a verification code library for Java, it doesn't rely on any other libraries,  is very easy to setup and use, is high availability and high performance . If you would like to change the style of the verification code image, there is several configuration options and the framework is modular so you can write your own morphing code.
 
-If you have a valid issue with the functionality or design of kaptcha, please click the [Issues page](https://github.com/shuaijunlan/nkaptcha/issues) and file one.
+If you have a valid issue with the functionality or design of nkaptcha, please click the [Issues page](https://github.com/shuaijunlan/nkaptcha/issues) and file one.
 
 ### Features
 
