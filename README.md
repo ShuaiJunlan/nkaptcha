@@ -8,6 +8,23 @@
 
 ### Installation
 
+* Buid by maven:
+
+```xml
+<repositories>
+    <repository>
+        <id>shuaijunlan-github-maven-repository</id>
+        <name>shuaijunlan-github-maven-repository</name>
+        <url>https://raw.githubusercontent.com/shuaijunlan/shuaijunlan.github.io/master/</url>
+    </repository>
+</repositories>
+<dependency>
+    <artifactId>nkaptcha</artifactId>
+    <groupId>io.github.shuaijunlan</groupId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+```
+
 ### Get Started
 
 You can generate verification code picture like this:
@@ -34,4 +51,3 @@ public void nkaptcha(HttpServletResponse httpServletResponse) throws IOException
             httpServletResponse.getOutputStream());
 }
 ```
-
