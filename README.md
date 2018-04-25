@@ -20,11 +20,13 @@ If you have a valid issue with the functionality or design of nkaptcha, please c
         <url>https://raw.githubusercontent.com/shuaijunlan/shuaijunlan.github.io/master</url>
     </repository>
 </repositories>
-<dependency>
-    <artifactId>nkaptcha</artifactId>
-    <groupId>io.github.shuaijunlan</groupId>
-    <version>1.0-SNAPSHOT</version>
-</dependency>
+<dependencies>
+    <dependency>
+        <artifactId>nkaptcha</artifactId>
+        <groupId>io.github.shuaijunlan</groupId>
+        <version>1.0-SNAPSHOT</version>
+	</dependency>
+</dependencies>
 ```
 
 ### Get Started
