@@ -2,13 +2,11 @@
 
 **nkaptcha** is a verification code library for Java, it doesn't rely on any other libraries,  is very easy to setup and use, is high availability and high performance . 
 
-#### Features
+### Features
 
-#### Installation
+### Installation
 
-
-
-#### Get Started
+### Get Started
 
 You can generate verification code picture like this:
 
