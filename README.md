@@ -25,7 +25,7 @@ If you have a valid issue with the functionality or design of nkaptcha, please c
         <artifactId>nkaptcha</artifactId>
         <groupId>io.github.shuaijunlan</groupId>
         <version>1.0-SNAPSHOT</version>
-	</dependency>
+    </dependency>
 </dependencies>
 ```
 
