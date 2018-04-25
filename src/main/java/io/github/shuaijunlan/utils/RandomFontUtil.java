@@ -1,4 +1,4 @@
-package org.nkaptcha.utils;
+package io.github.shuaijunlan.utils;
 
 import java.awt.*;
 import java.util.Random;

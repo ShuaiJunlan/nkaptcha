@@ -1,4 +1,4 @@
-package org.nkaptcha.constant;
+package io.github.shuaijunlan.constant;
 
 /**
  * @author Junlan Shuai[shuaijunlan@gmail.com].

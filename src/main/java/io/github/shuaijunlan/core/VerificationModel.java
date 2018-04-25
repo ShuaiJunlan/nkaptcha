@@ -1,4 +1,4 @@
-package org.nkaptcha.core;
+package io.github.shuaijunlan.core;
 
 import java.awt.image.BufferedImage;
 

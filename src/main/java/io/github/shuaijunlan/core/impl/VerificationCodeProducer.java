@@ -1,12 +1,12 @@
-package org.nkaptcha.core.impl;
+package io.github.shuaijunlan.core.impl;
 
-import org.nkaptcha.constant.ParamDefaultValue;
-import org.nkaptcha.core.IVerificationCodeProducer;
-import org.nkaptcha.core.VerificationModel;
-import org.nkaptcha.utils.NoiseUtil;
-import org.nkaptcha.utils.RandomColorUtil;
-import org.nkaptcha.utils.RandomFontUtil;
-import org.nkaptcha.utils.RandomTextUtil;
+import io.github.shuaijunlan.constant.ParamDefaultValue;
+import io.github.shuaijunlan.core.IVerificationCodeProducer;
+import io.github.shuaijunlan.core.VerificationModel;
+import io.github.shuaijunlan.utils.NoiseUtil;
+import io.github.shuaijunlan.utils.RandomFontUtil;
+import io.github.shuaijunlan.utils.RandomTextUtil;
+import io.github.shuaijunlan.utils.RandomColorUtil;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

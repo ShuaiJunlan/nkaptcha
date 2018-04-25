@@ -1,6 +1,6 @@
-package org.nkaptcha.core;
+package io.github.shuaijunlan.core;
 
-import org.nkaptcha.core.impl.VerificationCodeProducer;
+import io.github.shuaijunlan.core.impl.VerificationCodeProducer;
 
 import java.util.LinkedList;
 

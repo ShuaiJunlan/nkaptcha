@@ -1,4 +1,4 @@
-package org.nkaptcha.config;
+package io.github.shuaijunlan.config;
 
 import java.util.Properties;
 

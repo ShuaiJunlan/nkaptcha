@@ -1,6 +1,6 @@
-package org.nkaptcha.utils;
+package io.github.shuaijunlan.utils;
 
-import org.nkaptcha.constant.ParamDefaultValue;
+import io.github.shuaijunlan.constant.ParamDefaultValue;
 
 import java.util.Random;
 
