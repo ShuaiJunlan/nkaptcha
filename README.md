@@ -1,5 +1,7 @@
 # nkaptcha
 
+[![Build Status](https://travis-ci.org/shuaijunlan/nkaptcha.svg?branch=master)](https://travis-ci.org/shuaijunlan/nkaptcha) [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html) [![codecov](https://codecov.io/gh/shuaijunlan/nkaptcha/branch/master/graph/badge.svg)](https://codecov.io/gh/shuaijunlan/nkaptcha)
+
 **nkaptcha** is a verification code library for Java, it doesn't rely on any other libraries,  is very easy to setup and use, is high availability and high performance . 
 
 ### Features
