@@ -15,7 +15,7 @@
     <repository>
         <id>shuaijunlan-github-maven-repository</id>
         <name>shuaijunlan-github-maven-repository</name>
-        <url>https://raw.githubusercontent.com/shuaijunlan/shuaijunlan.github.io/master/</url>
+        <url>https://raw.githubusercontent.com/shuaijunlan/shuaijunlan.github.io/master</url>
     </repository>
 </repositories>
 <dependency>
