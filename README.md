@@ -6,6 +6,9 @@
 
 If you have a valid issue with the functionality or design of nkaptcha, please click the [Issues page](https://github.com/shuaijunlan/nkaptcha/issues) and file one.
 
+![Verification Code](https://github.com/shuaijunlan/nkaptcha/raw/master/img/en.jpg) ![Verification Code](https://github.com/shuaijunlan/nkaptcha/raw/master/img/zh.jpg)
+
+
 ### Features
 
 ### Installation
@@ -33,10 +36,11 @@ If you have a valid issue with the functionality or design of nkaptcha, please c
 
 You can generate verification code picture like this:
 
-* Output to folder
+* Output to folder by default properties
 
 ```java
-BufferedImage bufferedImage = VerificationList.pop().getBufferedImage();
+VerificationList verificationList = new VerificationList();
+BufferedImage bufferedImage = verificationList.pop().getBufferedImage();
 String formatName = "jpg";
 String pathName = "F:\\test\\" + System.currentTimeMillis() + ".jpg";
 ImageIO.write(bufferedImage,
@@ -44,14 +48,31 @@ ImageIO.write(bufferedImage,
         new File(pathName));
 ```
 
-* In web application
+* In web application by default properties
 
 ```java
 @GetMapping("nkaptcha")
 public void nkaptcha(HttpServletResponse httpServletResponse) throws IOException {
+    VerificationList verificationList = new VerificationList(properties);
     String formatName = "jpg";
-    ImageIO.write(VerificationList.pop().getBufferedImage(),
+    ImageIO.write(verificationList.pop().getBufferedImage(),
             formatName,
             httpServletResponse.getOutputStream());
 }
 ```
+
+* Also you can change the properties by yourself
+
+```java
+Properties properties = new Properties();
+properties.setProperty(ParamKeyConstants.NKAPTCHA_IMAGE_NOISE_LINE, "true");
+properties.setProperty(ParamKeyConstants.NKAPTCHA_IMAGE_NOISE_POINT, "false");
+properties.setProperty(ParamKeyConstants.NKAPTCHA_IMAGE_NOISE_LINE_COUNT, "10");
+VerificationList verificationList = new VerificationList(properties);
+BufferedImage bufferedImage = verificationList.pop().getBufferedImage();
+String formatName = "jpg";
+ImageIO.write(verificationList.pop().getBufferedImage(),
+              formatName,
+              httpServletResponse.getOutputStream());
+```
+

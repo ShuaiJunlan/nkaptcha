@@ -52,7 +52,7 @@ public class VerificationCodeProducerTest {
         printImage(bufferedImage);
 
     }
-    public void printImage(BufferedImage bufferedImage) throws IOException {
+    private void printImage(BufferedImage bufferedImage) throws IOException {
         String formatName = "jpg";
         String pathName = "F:\\test\\" + System.currentTimeMillis() + ".jpg";
         ImageIO.write(bufferedImage,
