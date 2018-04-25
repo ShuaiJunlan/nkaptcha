@@ -14,7 +14,7 @@ public class ParamDefaultValue {
 
     public final static String NKAPTCHA_PRODUCER_IMPL_DV = "nkaptcha.verificationcodeproducer.impl";
 
-    public final static String NKAPTCHA_TEXT_LANGUAGE_DV = "zh";
+    public final static String NKAPTCHA_TEXT_LANGUAGE_DV = "en";
 
     public final static Integer NKAPTCHA_TEXT_LENGTH_DV = 5;
 

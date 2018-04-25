@@ -19,7 +19,11 @@ public class VerificationCodeProducerTest {
 
     @Test
     public void createVerificationCode() throws IOException {
-        BufferedImage bufferedImage = VerificationList.pop().getBufferedImage();
-        ImageIO.write(bufferedImage, "jpg", new File("F:\\test\\" + System.currentTimeMillis() + ".jpg"));
+BufferedImage bufferedImage = VerificationList.pop().getBufferedImage();
+String formatName = "jpg";
+String pathName = "F:\\test\\" + System.currentTimeMillis() + ".jpg";
+ImageIO.write(bufferedImage,
+        formatName,
+        new File(pathName));
     }
 }
