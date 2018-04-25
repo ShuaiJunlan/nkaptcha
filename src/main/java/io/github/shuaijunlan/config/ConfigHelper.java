@@ -42,9 +42,10 @@ public class ConfigHelper {
         String initValue = "";
         if (paramValue == null || "".equals(paramValue)){
             initValue = defaultValue;
+            return initValue;
         }
         String[] lan = {"en", "zh"};
-        if (!lan[0].equals(paramValue) && !lan[1].equals(paramValue)){
+        if ((!lan[0].equals(paramValue)) && (!lan[1].equals(paramValue))){
             throw new ConfigException(paramName, paramValue, "Value must be 'en' or 'zh'");
         }
         if (lan[0].equals(paramValue)){

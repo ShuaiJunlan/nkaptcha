@@ -8,7 +8,6 @@ If you have a valid issue with the functionality or design of nkaptcha, please c
 
 ![Verification Code](https://github.com/shuaijunlan/nkaptcha/raw/master/img/en.jpg) ![Verification Code](https://github.com/shuaijunlan/nkaptcha/raw/master/img/zh.jpg)
 
-
 ### Features
 
 ### Installation
@@ -27,7 +26,7 @@ If you have a valid issue with the functionality or design of nkaptcha, please c
     <dependency>
         <artifactId>nkaptcha</artifactId>
         <groupId>io.github.shuaijunlan</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </dependency>
 </dependencies>
 ```
