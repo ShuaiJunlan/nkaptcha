@@ -35,5 +35,4 @@ public class VerificationList {
             verificationModels.add(verificationCodeProducer.createVerificationCode());
         }
     }
-
 }

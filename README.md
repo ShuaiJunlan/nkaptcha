@@ -51,12 +51,14 @@ ImageIO.write(bufferedImage,
 
 ```java
 @GetMapping("nkaptcha")
-public void nkaptcha(HttpServletResponse httpServletResponse) throws IOException {
-    VerificationList verificationList = new VerificationList(properties);
+public void nkaptcha(HttpServletResponse response, HttpServletRequest request) throws IOException {
+    VerificationList verificationList = new VerificationList();
+    VerificationModel verificationModel = verificationList.pop();
+    request.getSession().setAttribute("nkaptcha", verificationModel.getText());
     String formatName = "jpg";
-    ImageIO.write(verificationList.pop().getBufferedImage(),
+    ImageIO.write(verificationModel.getBufferedImage(),
             formatName,
-            httpServletResponse.getOutputStream());
+            response.getOutputStream());
 }
 ```
 
